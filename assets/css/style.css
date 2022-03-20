@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
+
+
+.teamMember__container .devAddForm {
+    display: block !important;
+}
+
+.teamMember__container.editMode .editDevInfoForm {
+    display: block !important;
+    border: 2px solid rgb(41, 141, 10);
+}
+
+.teamMember__container.editMode .devAddForm {
+    display: none !important;
+}
+
+.editDevInfoForm {
+    display: none;
+}
+
+/* For Devs Add Project */
+
+.developer__item>div img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 182px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 149px;
+    object-fit: cover;
+}
+
+.developer__item>div img:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Dev Item CLose Btn */
+
+.developer__item button {
+    padding: 0;
+    border: none;
+    border-radius: unset;
+    margin-left: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+}
+
+.developer__item button>i {
+    font-size: 10px;
+    vertical-align: middle;
+    margin-left: 10px;
+    padding: 10px 12.5px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.developer__item button.devEdit {
+    top: 50px !important;
+}
+
+.developer__item button.devEdit i {
+    padding: 8px !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+}
+
+.developer__item button>i:hover {
+    background: #151515d6;
+    color: white;
+}
+
+.developer__item button:active {
+    box-shadow: none !important;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+    font-family: 'Jost', sans-serif !important;
+    max-width: 1850px;
+    margin: auto;
+}
+
+.developer__container {
+    color: #090606;
+}
+
+.section__heading h1 {
+    text-align: center;
+    position: relative;
+}
+
+.section__heading h1::before {
+    content: "";
+    width: 100%;
+    background: url(assets/images/Line\ 5heading__after.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 17px;
+    background-position: center;
+    background-size: 241px;
+    height: 100%;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.developer__item__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.developer__item {
+    width: 8cm;
+    height: 100%;
+    background: white;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.developer__item img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.developer__name {
+    margin: 0px 15px 0px 15px;
+    position: relative;
+    z-index: 1;
+    color: #3A3838;
+    display: inline;
+    font-size: x-large !important;
+}
+
+.developer__name::before {
+    content: "";
+    width: 105%;
+    height: 15px;
+    background: #D9FFBB;
+    position: absolute;
+    bottom: 3px;
+    z-index: -1;
+    left: -7px;
+}
+
+.developer__desc {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px !important;
+    margin: 25px 15px 15px 15px;
+    color: #3A3838;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem !important;
+}
